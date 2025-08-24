@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "nodemon": "nodemon src/server.js",
-     "gen-swagger": "node src/swagger.js",
+    "gen-swagger": "node src/swagger.js",
     "start": "node src/swagger.js && node src/server.js"
   },
   "keywords": [],
