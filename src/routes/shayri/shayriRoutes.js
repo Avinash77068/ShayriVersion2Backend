@@ -7,7 +7,7 @@ router.get("/", getUserShayari); // Get all shayaris
 router.post("/", addShayari); // Create or Append shayari
 router.delete("/:email/:shayariId", deleteShayari); // Delete shayari
 router.delete("/",deleteAllShayaris)
-router.get("/:email", getUserShayaris); // Get all shayaris of a user
+router.post("/email", getUserShayaris); // Get all shayaris of a user
 
 
 
