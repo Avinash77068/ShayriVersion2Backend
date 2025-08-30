@@ -108,7 +108,7 @@ export const deleteAllShayaris = async (req, res) => {
 // GET all shayaris of a specific user by email
 export const getUserShayaris = async (req, res) => {
   try {
-    const { email } = req.params;
+    const { email } = req.body;
     const user = await User.findOne({ email });
     if (!user) return res.status(404).json({ error: "User not found" });
 
